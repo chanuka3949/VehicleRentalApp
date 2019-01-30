@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MAD Project</string>
+    <string name="activity_login_title">Vehicle Rental Service</string>
+    <string name="activity_customer_title">Welcome</string>
+    <string name="button_upload">Upload</string>
+    <string name="button_choose_image">Choose Image</string>
+    <string name="user_info">User Info</string>
+    <string name="google_maps_key">AIzaSyCoE4DtX86O-suo3xv2xyubzV-jcjeAgho</string>
+    <string name="title_activity_register_new_vehicle">RegisterNewVehicleActivity</string>
+    <string-array name="vehicleTypes">
+        <item>Car</item>
+        <item>Van</item>
+        <item>Motorbike</item>
+        <item>Jeep</item>
+        <item>SUV</item>
+    </string-array>
+</resources>

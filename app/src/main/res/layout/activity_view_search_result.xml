@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewSearchResultActivity">
+
+    <ImageView
+        android:id="@+id/vehicle_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/Vehicle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Vehicle"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textPassengers"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Passengers"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Owner Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Contact No"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="10dp"
+        android:autoLink="phone"
+        android:linksClickable="true"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Email"
+        android:layout_toEndOf="@id/Email"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Name"
+        android:layout_toEndOf="@id/Name"/>
+
+    <TextView
+        android:id="@+id/textContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView"
+        android:layout_toEndOf="@id/textView"/>
+
+    <TextView
+        android:id="@+id/txtSeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textPassengers"
+        android:layout_toEndOf="@id/textPassengers"/>
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Type"
+        android:layout_toEndOf="@id/Type"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Vehicle"
+        android:layout_toEndOf="@id/Vehicle"/>
+
+</RelativeLayout>

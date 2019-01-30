@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Passengers"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txtPassengers"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Type"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txtType"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerPassengers"
+        android:layout_alignBaseline="@+id/txtPassengers"
+        android:layout_toEndOf="@id/txtPassengers"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerType"
+        android:layout_alignBaseline="@+id/txtType"
+        android:layout_toEndOf="@id/txtType"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Search"/>
+
+</RelativeLayout>

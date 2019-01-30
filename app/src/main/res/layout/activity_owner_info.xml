@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerInfoActivity"
+    android:id="@+id/ownerInfoLayout">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:id="@+id/imageOwner"/>
+    <TextView
+        android:id="@+id/txtViewMobile"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="260dp"
+        android:text="Mobile"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/txtViewEmail"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="210dp"
+        android:text="E-mail"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/txtViewName"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:text="Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtViewName"
+        android:layout_toEndOf="@id/txtViewName"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtViewEmail"
+        android:layout_toEndOf="@id/txtViewEmail"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtViewMobile"
+        android:layout_toEndOf="@id/txtViewMobile"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnSetLocation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="150dp"
+        android:text="Set Location" />
+
+    <Button
+        android:id="@+id/btnSaveUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="80dp"
+        android:text="Save" />
+
+
+</RelativeLayout>
