@@ -1,19 +1,19 @@
 package nibm.hdse181.madproject;
 
+import android.content.ContentResolver;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.content.ContentResolver;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -88,11 +89,11 @@ public class RegisterNewVehicleActivity extends AppCompatActivity {
         progressBar.setTitleText("Saving");
         progressBar.setCancelable(false);
 
-        v_img=(ImageView)findViewById(R.id.vehicle_image);
-        txt_title=(EditText) findViewById(R.id.txtTitle);
-        txt_passengers=(EditText)findViewById(R.id.txtSeats);
-        v_type=(Spinner) findViewById(R.id.vehical_type);
-        btn_add=(Button) findViewById(R.id.btnAdd);
+        v_img = findViewById(R.id.vehicle_image);
+        txt_title = findViewById(R.id.txtTitle);
+        txt_passengers = findViewById(R.id.txtSeats);
+        v_type = findViewById(R.id.vehical_type);
+        btn_add = findViewById(R.id.btnAdd);
 
         isNewVehicle = intent.getBooleanExtra("isNew",true);
         if(isNewVehicle){
